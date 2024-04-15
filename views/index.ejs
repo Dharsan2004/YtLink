@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Submit Your Youtube Link</h1>
+        <form action="/submit" method="post">
+            <label for="videoLink">YouTube Video Link:</label><br />
+            <input type="text" id="videoLink" name="videoLink" /><br /><br />
+            <button type="submit">Submit</button>
+        </form>
+
+        <br /><br />
+        <h1>Embedded YouTube Video</h1>
+
+        <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/<%= videoId %>"
+            frameborder="0"
+            allowfullscreen
+        ></iframe>
+    </body>
+</html>
